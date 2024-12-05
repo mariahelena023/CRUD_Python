@@ -6,7 +6,8 @@ class Database:
         self.conn =  None
 
     def connect(self):
-        self.conn = mysql.connector.connect(host='10.38.0.85', database='crud_py', user='maria', password='321')
+        #definir host, database, user e password
+        self.conn = mysql.connector.connect(host='', database='', user='', password='')
         if self.conn.is_connected():
             self.cursor = self.conn.cursor()
             # print("CONECTADO COM SUCESSO!")
