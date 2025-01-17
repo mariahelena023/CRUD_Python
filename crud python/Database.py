@@ -6,8 +6,8 @@ class Database:
         self.conn =  None
 
     def connect(self):
-        #definir host, database, user e password
-        self.conn = mysql.connector.connect(host='', database='', user='', password='')
+        #definir host, database, user e password // se for no xampp o host e "localhost" e o user e "root"
+        self.conn = mysql.connector.connect(host='localhost', database='', user='root', password='')
         if self.conn.is_connected():
             self.cursor = self.conn.cursor()
             # print("CONECTADO COM SUCESSO!")
